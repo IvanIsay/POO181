@@ -1,10 +1,11 @@
 
 class Personaje:
     
-    #atributos del personaje
-    especie= "Humano"
-    nombre= "Marcus fenix"
-    altura= 1.90
+    #Creamos al constructor
+    def __init__(self, esp,nom,alt):
+        self.especie= esp
+        self.nombre= nom
+        self.altura= alt
     
     #Metodos Personaje
     
@@ -21,6 +22,6 @@ class Personaje:
     def recargarArma(self, municiones):
         cargador= 5
         cargador = cargador + municiones
-        print("El arma tiene ahora "+ str(cargador) +"balas"+) 
+        print("El arma tiene ahora "+ str(cargador) +"balas") 
           
     
